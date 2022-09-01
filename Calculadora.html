@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Front-End</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="linha">
+            <div class="tela">
+                <input type="text" class="tela-input" id="resultado">
+            </div>
+            <button class="btn-small vermelho" id="c" onclick="limpar('c')">C</button>                
+        </div>
+        
+        <div class="linha">
+            <button class="btn-big" id="1" onclick="tela('1')">1</button>
+            <button class="btn-big" id="2" onclick="tela('2')">2</button>
+            <button class="btn-big" id="3" onclick="tela('3')">3</button>
+            <button class="btn-small" id="/" onclick="tela('/')">/</button>
+        </div>
+        
+        <div class="linha">
+            <button class="btn-big" id="4" onclick="tela('4')">4</button>
+            <button class="btn-big" id="5" onclick="tela('5')">5</button>
+            <button class="btn-big" id="6" onclick="tela('6')">6</button>
+            <button class="btn-small" id="*" onclick="tela('*')">*</button>
+        </div>
+        
+        <div class="linha">
+            <button class="btn-big" id="7" onclick="tela('7')">7</button>
+            <button class="btn-big" id="8" onclick="tela('8')">8</button>
+            <button class="btn-big" id="9" onclick="tela('9')">9</button>
+            <button class="btn-small" id="-" onclick="tela('-')">-</button>
+        </div>
+        
+        <div class="linha">
+            <button class="btn-big" id="." onclick="tela('.')">.</button>
+            <button class="btn-big" id="0" onclick="tela('0')">0</button>
+            <button class="btn-big vermelho" id="=" onclick="igual('=')">=</button>
+            <button class="btn-small" id="+" onclick="tela('+')">+</button>
+        </div>
+    </div>
+</body>
+
+<script src="JavaScript.js"></script>
+
+</html>
